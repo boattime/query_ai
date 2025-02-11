@@ -1,0 +1,9 @@
+[package]
+name = "query_ai"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["repositories", "parser", "extractor"]
+
+[dependencies]
