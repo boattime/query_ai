@@ -5,5 +5,13 @@ edition = "2021"
 
 [workspace]
 members = ["repositories", "parser", "extractor"]
+resolver = "2"
+
+[workspace.dependencies]
+serde = { version = "1.0.217", features = ["derive"] }
+tempfile = "3.16.0"
+
+[workspace.metadata]
+inherit-tests = true
 
 [dependencies]
