@@ -5,10 +5,10 @@ edition = "2021"
 
 [dependencies]
 git2 = "0.20.0"
-serde = { version = "1.0.217", features = ["derive"] }
+serde = { workspace = true }
 toml = "0.8.20"
 dotenvy = "0.15.7"
-tempfile = "3.16.0"
+tempfile = { workspace = true }
 
 [dev-dependencies]
 mockall = "0.13.1"
