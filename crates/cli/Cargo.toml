@@ -1,0 +1,21 @@
+[package]
+name = "query-ai-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "query_ai"
+path = "src/main.rs"
+
+[dependencies]
+# Core crate
+query-ai-core = { path = "../core" }
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+
+# Error handling
+thiserror = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
